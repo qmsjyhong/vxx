@@ -1,0 +1,192 @@
+.scenarist {
+  &-detail {
+    padding-top: 0.5rem;
+  }
+  &-view {
+    width: 100%;
+    height: calc(~'100% - 4.84rem');
+    position: relative;
+  }
+  &-view_cont {
+    position: absolute;
+    border: 1px solid #999;
+    left: 0.36rem;
+    right: 0.36rem;
+    top: 2.02rem;
+    bottom: 2.96rem;
+    min-height: 3.85rem;
+  }
+  &-view_icons {
+    position: absolute;
+    left: 0.36rem;
+    right: 0.56rem;
+    height: 0.3rem;
+    bottom: 2.2rem;
+    button {
+      display: inline-block;
+      padding: 0 12px;
+      background: transparent;
+      box-shadow: none;
+      padding: 0;
+      height: 0.33rem;
+      margin-left: 0.5rem;
+    }
+    img {
+      width: 0.32rem;
+      height: 0.32rem;
+    }
+  }
+  &-view_iconsbox {
+    display: inline-block;
+    float: right;
+  }
+  &-btns {
+    margin-top: 0.1rem;
+    &_cont {
+      background-color: #0b0b0b;
+      display: inline-block;
+      border-radius: 0.12rem;
+      position: relative;
+      span {
+        display: inline-block;
+        font-size: 0.24rem;
+        color: #f8f8f8;
+        padding: 0.2rem 0.3rem;
+        border-left: 1px solid #424242;
+        &:first-child {
+          border-left: none;
+        }
+      }
+      &:after {
+        content: '';
+        width: 0;
+        position: absolute;
+        left: calc(~'50% - 0.6rem');
+        top: 100%;
+        border-width: 0.15rem;
+        border-style: solid;
+        border-color: #0b0b0b transparent transparent transparent;
+      }
+    }
+  }
+}
+.reset {
+  padding: 0 0.7rem;
+  color: #dedede;
+  float: right;
+  border-radius: 0.08rem;
+  background: none;
+  font-size: 0.22rem;
+  margin-top: 0.2rem;
+  height: 0.5rem;
+}
+.layout {
+  height: 90%;
+  overflow: auto;
+  .save {
+    color: #e67007;
+  }
+}
+
+.layout-content {
+  height: 90%;
+  overflow: auto;
+  > .masks {
+    > .interception-title {
+      width: 100%;
+      height: 4.57rem;
+      border-top: 0.01rem solid #424242;
+      > div:nth-child(1) {
+        width: 7rem;
+        height: 4.08rem;
+        background: #121213;
+        margin: auto;
+        margin-top: 0.25rem;
+        border-radius: 0.08rem;
+        border: 0.02rem solid #424242;
+      }
+    }
+    > .masks-border-title {
+      padding: 0.2rem;
+      display: flex;
+      justify-content: space-between;
+      > div:nth-child(1) {
+        color: #c2c2c2;
+        font-size: 0.32rem;
+      }
+    }
+    > .masks-title {
+      font-size: 0.26rem;
+      color: #f8f8f8;
+      text-align: left;
+      padding: 0.2rem;
+    }
+    > .masks-contents {
+      padding: 0.2rem 0.3rem;
+      background: #383940;
+      color: #dddddd;
+      overflow: hidden;
+      > .borderColor {
+        margin-top: 0.25rem;
+        > .borderColor-title {
+          display: flex;
+          justify-content: space-between;
+          > div:nth-child(1) {
+            font-size: 0.34rem;
+          }
+          > div:nth-child(2) {
+            width: 1.09rem;
+            height: 0.46rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 0.08rem;
+            padding: 0.03rem;
+            box-sizing: border-box;
+          }
+        }
+        > .colorList {
+          list-style: none;
+          padding: 0.66rem 0 0 0;
+          > li {
+            width: 1.09rem;
+            height: 0.46rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 0.08rem;
+            margin-bottom: 0.66rem;
+            margin-right: 0.1rem;
+            margin-left: 0.1rem;
+            float: left;
+            padding: 0.03rem;
+            box-sizing: border-box;
+          }
+        }
+      }
+    }
+  }
+  > .windows {
+    > .windows-title {
+      font-size: 0.26rem;
+      color: #f8f8f8;
+      text-align: left;
+      padding: 0.2rem;
+    }
+    > .windows-contents {
+      padding: 0.2rem 0.3rem;
+      background: #383940;
+      color: #dddddd;
+      overflow: hidden;
+    }
+  }
+}
+
+.mint-popup {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #212124;
+}
+.mint-popup-right {
+}
